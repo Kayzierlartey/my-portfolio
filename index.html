@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kayzier Lartey's Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-900">
+  <!-- Header -->
+  <header class="flex justify-between items-center p-6 bg-white shadow-md">
+    <h1 class="text-xl italic text-red-600">Kayzier Lartey's Portfolio</h1>
+    <nav>
+      <ul class="flex space-x-6 text-sm font-semibold">
+        <li><a href="#home" class="hover:text-red-600" aria-label="Home page">Home</a></li>
+        <li><a href="#about" class="hover:text-red-600" aria-label="About section">About</a></li>
+        <li><a href="#projects" class="hover:text-red-600" aria-label="Projects section">Projects</a></li>
+        <li><a href="#contact" class="hover:text-red-600" aria-label="Contact section">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="flex flex-col md:flex-row items-center gap-10 p-10">
+    <!-- Image Left -->
+    <div class="flex-1 flex justify-center">
+      <img src="WhatsApp Image 2025-08-25 at 10.41.39 AM.jpeg" alt="Profile image" class="w-64 h-64 object-cover rounded-2xl shadow-lg">
+    </div>
+    <!-- Text Right -->
+    <div class="flex-1">
+      <h2 class="text-3xl font-bold mb-4 text-red-600">Who Am I?</h2>
+      <p class="text-md leading-relaxed">
+        Hello! I am <span class="font-semibold">Kayzier Lartey</span>, a software engineer dedicated to building responsive and user-friendly web applications. 
+        I specialize in <span class="font-semibold">HTML, CSS, JavaScript, and React</span>, focusing on clean code and scalable solutions. <br><br>
+        I am currently a Software Development student at Codtrain Africa, where I enhance my skills through hands-on projects using modern tools. 
+        I thrive in cross-functional teams, sharing knowledge and learning from others to deliver high-quality products on time. <br><br>
+        Let’s connect to create impactful digital experiences!
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-12 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8 text-red-600">My Skills</h2>
+      <p class="text-center mb-6">I’m an experienced Frontend Developer who loves building efficient, scalable, and user-friendly web applications.</p>
+      <ul class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <li class="border border-gray-400 rounded-xl p-6 hover:bg-red-50 hover:-translate-y-1 transition duration-500 hover:shadow-lg">
+        <img src="https://musical-tanuki-ad72f3.netlify.app/code-icon.png" alt="lan icon" class="w-7 mt-3">
+
+          <h3 class="my-4 font-semibold text-gray-700">Languages</h3>
+          <p class="text-gray-600 text-sm">HTML, CSS, JavaScript, React</p>
+        </li>
+        <li class="border border-gray-400 rounded-xl p-6 hover:bg-red-50 hover:-translate-y-1 transition duration-500 hover:shadow-lg">
+          <img src="https://musical-tanuki-ad72f3.netlify.app/edu-icon.png" alt="Education icon" class="w-7 mt-3">
+          <h3 class="my-4 font-semibold text-gray-700">Education</h3>
+          <p class="text-gray-600 text-sm">Software Engineering @ Codetrain Africa</p>
+        </li>
+        <li class="border border-gray-400 rounded-xl p-6 hover:bg-red-50 hover:-translate-y-1 transition duration-500 hover:shadow-lg">
+          <h3 class="my-4 font-semibold text-gray-700">Tools</h3>
+          <p class="text-gray-600 text-sm">Git, VS Code</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-12 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8 text-red-600">My Projects</h2>
+   <div class="container mx-auto px-4">
+          <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-10">
+            
+            <!-- Card 1 -->
+            <div class="relative w-full h-[200px] bg-[url('project1.png')] bg-no-repeat bg-center bg-cover group rounded-md overflow-hidden">
+              <!-- Text on top of image -->
+              <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+                <div class="cursor-pointer" >
+                  <a href="https://github.com/Kayzierlartey/shopping--cart" target="_blank" rel="noopener noreferrer">
+                    <h2 class="font-semibold">Shopping Cart</h2>
+                  <p  class="text-sm text-gray-700">Html & Tailwind CSS</p>
+
+                  </a>    
+                </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-12 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8 text-red-600">Get in Touch</h2>
+      <form id="contact-form" class="max-w-lg mx-auto bg-white shadow-md p-6 rounded-lg">
+        <div class="mb-4">
+          <label for="name" class="block text-gray-700">Name</label>
+          <input type="text" id="name" class="w-full p-2 border rounded focus:ring focus:ring-red-300" required aria-label="Your name">
+       
