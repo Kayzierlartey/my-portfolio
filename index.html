@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kayzier Lartey's Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-</head>
 <body class="bg-gray-100 text-gray-900">
   <!-- Header -->
   <header class="flex justify-between items-center p-6 bg-white shadow-md">
@@ -65,32 +64,107 @@
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="py-12 bg-gray-100">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-8 text-red-600">My Projects</h2>
-   <div class="container mx-auto px-4">
-          <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-10">
-            
-            <!-- Card 1 -->
-            <div class="relative w-full h-[200px] bg-[url('project1.png')] bg-no-repeat bg-center bg-cover group rounded-md overflow-hidden">
-              <!-- Text on top of image -->
-              <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
-                <div class="cursor-pointer" >
-                  <a href="https://github.com/Kayzierlartey/shopping--cart" target="_blank" rel="noopener noreferrer">
-                    <h2 class="font-semibold">Shopping Cart</h2>
-                  <p  class="text-sm text-gray-700">Html & Tailwind CSS</p>
-
-                  </a>    
-                </div>
+  <section class="container mx-auto py-8">
+  <h2 class="text-3xl font-bold text-center mb-6 text-red-600">My Projects</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <!-- Card 1-->
+    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+      <img src="smartapp.png" alt="Shopping Cart" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h3 class="text-xl font-semibold mb-2">Smart App Project</h3>
+        <div class="flex space-x-4">
+          <a href="https://www.linkedin.com/in/kayzier-lartey-687341357/" class="text-blue-500 hover:underline">Linkedln</a>
+          <a href="https://github.com/Kayzierlartey" class="text-blue-500 hover:underline">GitHub</a>
+        </div>
+      </div>
     </div>
-  </section>
+    
+
+    <!-- Card 2-->
+    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+      <img src="foodies.png" alt="Shopping Cart" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h3 class="text-xl font-semibold mb-2">Foodies Project</h3>
+        <div class="flex space-x-4">
+          <a href="https://www.linkedin.com/in/kayzier-lartey-687341357/" class="text-blue-500 hover:underline">Linkedln</a>
+          <a href="https://github.com/Kayzierlartey" class="text-blue-500 hover:underline">GitHub</a>
+        </div>
+      </div>
+      </div>
+
+
+      
+    <!-- Card 3-->
+    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+      <img src="spotify.png" alt="Shopping Cart" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h3 class="text-xl font-semibold mb-2">Spotify Project</h3>
+        <div class="flex space-x-4">
+          <a href="https://www.linkedin.com/in/kayzier-lartey-687341357/" class="text-blue-500 hover:underline">Linkedln</a>
+          <a href="https://github.com/Kayzierlartey/spotify" class="text-blue-500 hover:underline">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
   <!-- Contact Section -->
-  <section id="contact" class="py-12 bg-white">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-8 text-red-600">Get in Touch</h2>
-      <form id="contact-form" class="max-w-lg mx-auto bg-white shadow-md p-6 rounded-lg">
-        <div class="mb-4">
-          <label for="name" class="block text-gray-700">Name</label>
-          <input type="text" id="name" class="w-full p-2 border rounded focus:ring focus:ring-red-300" required aria-label="Your name">
-       
+ <section id="contact" class="py-12 bg-white">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-8 text-red-600">Get in Touch</h2>
+    <div class="max-w-lg mx-auto bg-white shadow-md p-6 rounded-lg">
+      <p class="text-center mb-8">
+        Please feel free to reach out! Use the form below to share any questions, feedback, or comments you may have.
+      </p>
+      <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+        <input type="hidden" name="access_key" value="925dbbf1-44cc-4daa-84e3-99086019cc3c">
+        <div class="grid grid-cols-2 gap-6 mb-6">
+          <input
+            type="text"
+            placeholder="Enter your name"
+            class="p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white"
+            required
+            name="name"
+          >
+          <input
+            type="email"
+            placeholder="Enter your email"
+            class="p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white"
+            required
+            name="email"
+          >
+        </div>
+      
+          <textarea name="" id="" rows="6" placeholder="Enter your message" class="w-full p-4 outline-none norder-[0.5px] border-gray-400 rounded-md  bg-white mb-6" name="message"></textarea>
+          
+        </form>
+      </form>
+    </div>
+  </div>
+</section>
+
+   <button type="submit" class="py-3 px-8 w-max flex items-center justify-between bg-black text-white  gap-2 rounded-full mx-auto">
+           Submit now
+         <img src="https://musical-tanuki-ad72f3.netlify.app/right-arrow-white.png" alt="Arrow icon" class="w-4">
+        </button>
+          
+
+ <!-- footer  -->
+
+    <div class="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] mt-12 py-6">
+      <p>© 2025 Kayzier Lartey. All rights reserved.</p>
+      <ul class="flex items-center gap-10 justify-center mt-4 sm:mt-0">
+        <li><a href="https://github.com/Kayzierlartey">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/kayzier-lartey-687341357/">LinkedIn</a></li>
+      </ul>
+    </div>
+  </div>
+
+       </div>
+       </form>
+       </div>
+       </section>
+
+       </body>
+       </head>
+       </html>
